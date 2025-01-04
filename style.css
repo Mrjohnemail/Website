@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,36 +6,45 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
     background-color: #333;
-    color: #fff;
-    padding: 1rem;
+    color: white;
+    padding: 1.5rem;
     text-align: center;
+    font-size: 2rem;
 }
 
+/* Navigation */
 nav {
     text-align: center;
     margin: 20px 0;
 }
 
 nav a {
-    color: #333;
+    color: white;
     text-decoration: none;
     margin: 0 15px;
-    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #444;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    color: #007bff;
+    background-color: #007bff;
 }
 
+/* Container */
 .container {
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -43,18 +52,42 @@ nav a:hover {
 /* Footer */
 footer {
     background-color: #333;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
 
-/* Style for Images in Gallery */
+/* Gallery Styling */
 .gallery img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin: 15px 0;
+}
+
+/* Game Area */
+#gameArea {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #444;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
