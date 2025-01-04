@@ -3,29 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gorgon’s Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to My Retro Website</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #c0c0c0;
+            color: black;
+            text-align: center;
+        }
+        h1 {
+            color: #ff0000;
+        }
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+        .navbar {
+            background-color: #000080;
+            padding: 10px;
+        }
+        .navbar a {
+            margin: 10px;
+            color: white;
+        }
+        .content {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 2px solid #000000;
+            width: 80%;
+            margin: 20px auto;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
 
-    <main>
-        <section id="intro">
-            <h1>Welcome to Gorgon's Horror World</h1>
-            <p>Explore the spooky universe!</p>
-        </section>
-    </main>
+    <h1>Welcome to My Retro Website</h1>
+
+    <div class="content">
+        <p>This website looks like it’s from the early days of the internet!</p>
+        <p>Here are some cool links to check out:</p>
+        <ul>
+            <li><a href="#">Old-School Games</a></li>
+            <li><a href="#">Web History</a></li>
+        </ul>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Gorgon’s Horror World</p>
+        <p>Created by [Your Name] - © 1995</p>
     </footer>
 </body>
 </html>
