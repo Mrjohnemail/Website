@@ -1,6 +1,10 @@
-// Example JavaScript for the Games page
+// Function for starting the game (this is a placeholder logic)
 function startGame() {
     const gameArea = document.getElementById('gameArea');
     gameArea.innerHTML = "<p>Game starting...</p>";
-    // Add more game logic here, like displaying a game canvas or interactive elements.
+    
+    // Add your game logic here. For now, let's simulate a game start.
+    setTimeout(() => {
+        gameArea.innerHTML = "<p>Game Over! Well played!</p>";
+    }, 5000); // After 5 seconds, game ends.
 }
