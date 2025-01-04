@@ -6,88 +6,147 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
     line-height: 1.6;
+    text-align: center;
 }
 
 /* Header */
 header {
-    background-color: #333;
-    color: white;
-    padding: 1.5rem;
-    text-align: center;
-    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 2rem 0;
+    font-size: 2.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
 }
 
 /* Navigation */
 nav {
-    text-align: center;
-    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    margin: 10px 0;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    padding: 10px 15px;
+    margin: 0 20px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     border-radius: 5px;
-    background-color: #444;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 nav a:hover {
     background-color: #007bff;
+    transform: scale(1.05);
 }
 
-/* Container */
+/* Main Container */
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 3rem 0;
+}
+
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #ffbc00;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
-/* Gallery Styling */
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
 .gallery img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 15px 0;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
 }
 
 /* Game Area */
 #gameArea {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #444;
-    color: white;
-    border-radius: 8px;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Button Styling */
 button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
+    background-color: #ffbc00;
+    color: #fff;
+    padding: 15px 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #ff9900;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    header {
+        font-size: 2rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
 }
